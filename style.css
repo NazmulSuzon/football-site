@@ -2,6 +2,7 @@ main{
   display: flex; 
   flex-direction: column; 
   align-items: center;
+  background-color: rgb(255, 255, 255);
 }
 /* body section */
 body{
@@ -47,7 +48,7 @@ p{
     color: white;
     font-size: 4rem;
 }
-.banner-btn{
+.banner-button{
     padding: 10px 19px;
     outline: none;
     border: none;
@@ -74,11 +75,8 @@ p{
     border-radius: 5px;
     margin-top: 21PX;
 }
-main {
-    background-color: rgb(255, 255, 255);
-}
-.player
-{
+/* Player Data */
+.player{
     display: grid;
     grid-template-columns: repeat(3, 1fr)  ;
     
@@ -107,6 +105,7 @@ main {
     box-shadow: 5px 5px 13px 2px rgb(209, 209, 209);
 
 }
+/* Footer */
  footer p{
     
      text-align: center;
@@ -115,6 +114,7 @@ main {
        width: 250px;
        height: 90px;
  }
+ /* Social Icon */
  .social-icon{
      text-align: center;
      
@@ -126,6 +126,11 @@ main {
      font-size: 1rem;
      margin: 3px 9px;
  }
+ .icon:hover{
+    transform: scale(1.3);
+    background-color: lightsalmon;
+}
+/* Responsive */
 @media only screen and (max-width:688px) {
     .player{
         grid-template-columns: repeat(1,1fr);
@@ -134,7 +139,7 @@ main {
         font-size: 1.3rem;
      
     }
-    .banner-btn{
+    .banner-button{
         padding: 7px 9px;
         font-size: .5rem;
      
@@ -157,6 +162,7 @@ main {
         
     }
 }
+/* Blog Section */
 .blogs{
     
     display: flex;
@@ -188,10 +194,8 @@ main {
     text-align: center;
     font-size: 2rem;
 }
-.icon:hover{
-    transform: scale(1.3);
-    background-color: lightsalmon;
-}
+
+/* Feedback section */
 .feedback{
     text-align: center;
     background-color: blue;
